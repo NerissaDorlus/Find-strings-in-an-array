@@ -9,3 +9,18 @@ function findString(arr) {
 }
 
 console.log(findString(arr1));
+
+//--------------------------------------------------------
+
+// both work
+
+function findString(friendList, name) {
+  for (let i = 0; i < friendList.length; i++) {
+    if (friendList[i] === name) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(findString(arr1));
